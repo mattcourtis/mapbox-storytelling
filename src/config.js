@@ -133,7 +133,7 @@ var config = {
                     duration: 50
                 },
                 {
-                     layer: 'harvesting-event',
+                     layer: 'forest-harvest-2019-2020',
                      opacity: 1,
                      duration: 50
                 }
@@ -144,7 +144,7 @@ var config = {
                     opacity: 0.8
                 },
                 {
-                    layer: 'harvesting-event',
+                    layer: 'forest-harvest-2019-2020',
                     opacity: 0
                 }
             ]
@@ -217,12 +217,12 @@ var config = {
             onChapterEnter: [
                 {
                     layer: '1385-boundary',
-                    opacity: 0.9,
+                    opacity: 1,
                     duration: 1000
                 },
                 {
                      layer: 'fire-boundary',
-                     opacity: 0.7,
+                     opacity: 0.75,
                      duration: 1000
                 }
             ],
@@ -243,7 +243,7 @@ var config = {
             hidden: false,
             title: '2020 - 2022 Forest Loss',
             image: '',
-            description: '',
+            description: 'Loss from the fire incident is visible on the platform.',
             location: {
                 center: [-121.45, 40.149],
                 zoom: 11,
@@ -265,10 +265,15 @@ var config = {
                     duration: 1000
                 },
                 {
-                     layer: 'forest-loss-2020to2022',
-                     opacity: 0.7,
+                     layer: 'forest-loss-2020-to-2022',
+                     opacity: 1,
                      duration: 1000
-                }
+                },
+                {
+                    layer: 'fire-boundary',
+                    opacity: 0.3,
+                    duration: 1000
+               }
             ],
             onChapterExit: [
                 {
@@ -276,9 +281,13 @@ var config = {
                     opacity: 0.9
                 },
                 {
-                    layer: 'forest-loss-2020to2022',
+                    layer: 'forest-loss-2020-to-2022',
                     opacity: 0
-                }
+                },
+                {
+                    layer: 'fire-boundary',
+                    opacity: 0
+               }
             ]
         }
     ]
