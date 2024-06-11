@@ -62,7 +62,7 @@
             padding-bottom: 2vh;
             text-align: center;
             line-height: 25px;
-            font-size: 13px;
+            font-size: 20px;
             position: relative;
             z-index: 5;
         }
@@ -91,7 +91,7 @@
         }
         .light {
             color: #444;
-            background-color: #fafafa;
+            background-color: #bdb9fa;
         }
         .dark {
             color: #fafafa;
@@ -109,7 +109,7 @@
         .step div {
             padding:  25px 50px;
             line-height: 25px;
-            font-size: 13px;
+            font-size: 18px;
         }
 
         .step img {
@@ -370,7 +370,7 @@ map.on("load", function() {
         if (chapter.rotateAnimation) {
             map.once('moveend', () => {
                 const rotateNumber = map.getBearing();
-                map.rotateTo(rotateNumber + 180, {
+                map.rotateTo(rotateNumber + 60, {
                     duration: 30000, easing: function (t) {
                         return t;
                     }

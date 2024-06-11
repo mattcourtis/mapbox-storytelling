@@ -52,10 +52,10 @@ var config = {
             },
             onChapterEnter: [],
             onChapterExit: [
-                // {
-                //     layer: 'gnpglaciers-2015',
-                //     opacity: 0
-                // }
+                {
+                    layer: 'gnpglaciers-2015',
+                    opacity: 0
+                }
             ]
         },
         {
