@@ -13,15 +13,15 @@ var config = {
     title: 'Treefera',
     //subtitle: '',
     //byline: '',
-    footer: '',
+    footer: 'End of Demo',
     chapters: [
         {
             id: 'first-layer',
             alignment: 'left',
             hidden: false,
-            title: 'Global',
+            title: 'Global Satellite and AI-powered nature-based monitoring platform',
             image: 'images/platform-global-mapview.png',
-            description: 'Treefera is a global platform, offering coverage of project monitoring across all continents.',
+            description: 'Treefera already has over 500 projects on the platform that are located all over the world.',
             location: {
                 center: [0, 49],
                 zoom: 2.5,
@@ -38,12 +38,12 @@ var config = {
             id: 'second-layer',
             alignment: 'right',
             hidden: false,
-            title: 'Let\'s zoom on a forest region in North America - CAR 1385',
+            title: 'Let\'s investigate a project currently on the Treefera Platform: CAR 1385 in California.',
             image: 'images/platform-example.png',
             description: '',
             location: {
-                center: [-121.5, 40.149],
-                zoom: 9.5,
+                center: [-121.5, 40.14],
+                zoom: 9.,
                 pitch: 12,
                 bearing: 12,
                 // flyTo additional controls-
@@ -74,11 +74,11 @@ var config = {
             id: 'third-layer',
             alignment: 'right',
             hidden: false,
-            title: 'We can monitor the forest change over time.',
+            title: 'This land is commercial forestry, with the platform we can detect forest change over time (in this case since 2017)',
             image: 'images/post_forest.png',
             description: '',
             location: {
-                center: [-121.45, 40.149],
+                center: [-121.45, 40.14],
                 zoom: 11,
                 pitch: 0,
                 bearing: 0,
@@ -111,9 +111,9 @@ var config = {
             hidden: false,
             title: 'Harvest Detection',
             image: '',
-            description: 'We can monitor and detect harvest activities.',
+            description: 'Depicted in black we can see areas that have been harvested since 2017',
             location: {
-                center: [-121.45, 40.149],
+                center: [-121.45, 40.14],
                 zoom: 11,
                 pitch: 0,
                 bearing: 0,
@@ -150,14 +150,49 @@ var config = {
             ]
         },
         {
+            id: 'forestloss-layer',
+            alignment: 'right',
+            hidden: false,
+            title: 'Harvest Detection',
+            image: '',
+            description: 'Removing our harvest map overlay, these areas are visible via satellite imagery.',
+            location: {
+                center: [-121.45, 40.14],
+                zoom: 11,
+                pitch: 0,
+                bearing: 0,
+                // flyTo additional controls-
+                // These options control the flight curve, making it move
+                // slowly and zoom out almost completely before starting to pan.
+                speed: 1.1, // make the flying slow
+                curve: 1.1, // change the speed at which it zooms out
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [
+                {
+                    layer: '1385-boundary',
+                    opacity: 0.8,
+                    duration: 50
+                }
+            ],
+            onChapterExit: [
+                {
+                    layer: '1385-boundary',
+                    opacity: 0.8
+                }
+            ]
+        },
+        {
             id: 'growth-layer',
             alignment: 'right',
             hidden: false,
             title: 'Regrowth Detection',
             image: '',
-            description: 'Forest growth can be detected and displayed on the platform.',
+            description: 'Depicted in white are regrowth areas where trees have been replanted since harvest.',
             location: {
-                center: [-121.45, 40.149],
+                center: [-121.45, 40.14],
                 zoom: 11,
                 pitch: 0,
                 bearing: 0,
@@ -197,11 +232,11 @@ var config = {
             id: 'fire-layer',
             alignment: 'right',
             hidden: false,
-            title: 'Fire Detection',
+            title: 'Some projects have large reversal events such as fires.',
             image: 'images/fire-image.png',
-            description: 'Dixie fire incident in 2021 caused significant damage to the project area.',
+            description: 'This was the case for this project in 2021 where a large fire (Dixie Incident) burnt close to 1,000,000 acres of land and habitations in North California.',
             location: {
-                center: [-121.45, 40.149],
+                center: [-121.45, 40.14],
                 zoom: 11,
                 pitch: 0,
                 bearing: 0,
@@ -241,11 +276,11 @@ var config = {
             id: 'forest-loss-layer',
             alignment: 'right',
             hidden: false,
-            title: '2020 - 2022 Forest Loss',
+            title: 'Forest loss due to fire can be calculated on the platform and is distinguishable from human deforestation events such as harvests.',
             image: '',
-            description: 'Loss from the fire incident is visible on the platform.',
+            description: '',
             location: {
-                center: [-121.45, 40.149],
+                center: [-121.45, 40.14],
                 zoom: 11,
                 pitch: 0,
                 bearing: 0,
