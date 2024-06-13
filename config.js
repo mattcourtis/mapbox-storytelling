@@ -296,7 +296,7 @@ var config = {
             onChapterEnter: [
                 {
                     layer: '1385-boundary',
-                    opacity: 0.9,
+                    opacity: 0.95,
                     duration: 1000
                 },
                 {
@@ -313,7 +313,7 @@ var config = {
             onChapterExit: [
                 {
                     layer: '1385-boundary',
-                    opacity: 0.9
+                    opacity: 0.95
                 },
                 {
                     layer: 'forest-loss-2020-to-2022',
