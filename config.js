@@ -93,12 +93,21 @@ var config = {
             callback: '',
             onChapterEnter: [
                 {
+                    layer: '1385-boundary',
+                    opacity: 0.9,
+                    duration: 1000
+               },
+                {
                      layer: 'forest-change-2017to2023',
                      opacity: 1,
                      duration: 50
                 }
             ],
             onChapterExit: [
+                {
+                    layer: '1385-boundary',
+                    opacity: 0.9
+                },
                 {
                     layer: 'forest-change-2017to2023',
                     opacity: 0
