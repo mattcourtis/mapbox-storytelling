@@ -66,7 +66,7 @@ var config = {
             onChapterExit: [
                 {
                     layer: '1385-boundary',
-                    opacity: 0
+                    opacity: 0.9
                 }
             ]
         },
