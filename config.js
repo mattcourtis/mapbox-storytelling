@@ -1,5 +1,5 @@
 var config = {
-    style: 'mapbox://styles/laurencedhonau/clx4vkr7601qa01qxamzbcjts', 
+    style: 'mapbox://styles/laurencedhonau/clxbozofm00rj01qqenp748jg', 
     accessToken: 'pk.eyJ1IjoibGF1cmVuY2VkaG9uYXUiLCJhIjoiY2x4NHNlYWpjMTJ2eTJpcXh6NGc2Z3FmYSJ9.XBA6JXQO9CedB6W3tRjHWg',
     showMarkers: false,
     markerColor: '#3FB1CE',
