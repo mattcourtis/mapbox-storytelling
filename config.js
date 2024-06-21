@@ -1,5 +1,5 @@
 var config = {
-    style: 'mapbox://styles/laurencedhonau/clxbozofm00rj01qqenp748jg', 
+    style: 'mapbox://styles/laurencedhonau/clxosuy7200m801pf9hh6167s', 
     accessToken: 'pk.eyJ1IjoibGF1cmVuY2VkaG9uYXUiLCJhIjoiY2x4NHNlYWpjMTJ2eTJpcXh6NGc2Z3FmYSJ9.XBA6JXQO9CedB6W3tRjHWg',
     showMarkers: false,
     markerColor: '#3FB1CE',
@@ -29,7 +29,7 @@ var config = {
                 bearing: 0.00
             },
             mapAnimation: 'flyTo',
-            rotateAnimation: true,
+            rotateAnimation: false,
             callback: '',
             onChapterEnter: [],
             onChapterExit: []
@@ -315,7 +315,7 @@ var config = {
                 },
                 {
                     layer: 'fire-boundary',
-                    opacity: 0.3,
+                    opacity: 0.7,
                     duration: 1000
                }
             ],
